@@ -103,7 +103,7 @@ check('Copy retains classification, source context, locators and uncertainty', (
     assert.ok(summary.includes(record.classification));
     assert.ok(summary.includes('not exclusive territories or verified current distribution'));
     assert.ok(summary.includes('Reviewed as content does not mean verified ancestry.'));
-    if (record.sourceIds.some(id => sources[id].image)) assert.ok(summary.includes('private project material'));
+    if (record.sourceIds.some(id => sources[id].image)) assert.ok(summary.includes('(project material)'));
     for (const claim of record.claims) {
       assert.ok(summary.includes(claim.locator));
       if (claim.status === 'context' || claim.status === 'tradition') assert.ok(summary.includes(claim.text));

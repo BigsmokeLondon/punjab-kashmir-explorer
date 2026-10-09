@@ -46,7 +46,7 @@
       const url = source.image ? localUrl(source.url, origin) : source.url;
       const locators = [...new Set(record.claims.filter(c => c.source === id).map(c => c.locator))].join('; ');
       const passages = [...new Set(record.claims.filter(c => c.source === id && c.passageId).map(c => c.passageId))];
-      return source.author + '. ' + source.title + '. ' + source.date + '. ' + locators + '. ' + url + (source.image ? ' (private project material)' : '') + (passages.length ? '\nUploaded passages (private site): ' + passages.map(p => passageUrl(p, sources, origin)).join('; ') : '');
+      return source.author + '. ' + source.title + '. ' + source.date + '. ' + locators + '. ' + url + (source.image ? ' (project material)' : '') + (passages.length ? '\nUploaded passages: ' + passages.map(p => passageUrl(p, sources, origin)).join('; ') : '');
     }).join('\n\n');
   }
   function qualifiedSummary(record, sources, origin = '') {
@@ -63,7 +63,7 @@
   }
   function exportSaved(records, sources, review, origin = '') {
     const saved = records.filter(r => review[r.id]?.saved).sort((a, b) => a.name.localeCompare(b.name, 'en'));
-    return ['PUNJAB AND KASHMIR | SAVED RESEARCH RECORDS', 'A private working selection. Qualifications and sources are retained.', 'Exported ' + new Date().toISOString().slice(0, 10), '', ...saved.flatMap(record => [qualifiedSummary(record, sources, origin), '', 'Editorial review: ' + (review[record.id].reviewed ? 'Reviewed' : 'Needs review'), 'Your notes: ' + (review[record.id].notes || '(none)'), '', '========================================', ''])].join('\n');
+    return ['PUNJAB AND KASHMIR | SAVED RESEARCH RECORDS', 'A working selection. Qualifications and sources are retained.', 'Exported ' + new Date().toISOString().slice(0, 10), '', ...saved.flatMap(record => [qualifiedSummary(record, sources, origin), '', 'Editorial review: ' + (review[record.id].reviewed ? 'Reviewed' : 'Needs review'), 'Your notes: ' + (review[record.id].notes || '(none)'), '', '========================================', ''])].join('\n');
   }
   return { types, regions, groups, normalise, matchRecords, cleanReview, qualifiedSummary, exportSaved, references, passageUrl };
 });

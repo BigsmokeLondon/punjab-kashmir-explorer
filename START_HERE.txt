@@ -4,13 +4,17 @@ Updated 9 October 2026
 This folder is the master copy of the website: 109 records, the uploaded
 Panjab Castes text, the cited passages, artwork, source notes and editable code.
 
-HOSTED COPY (private to your claude.ai account)
-https://claude.ai/artifact/MCd5tP8iJdZoKhCJ9gSNUY
-It is built from this folder. Change things here, then republish (see below).
+WEBSITE (public, published by GitHub Pages)
+https://bigsmokelondon.github.io/punjab-kashmir-explorer/
+Every push to the main branch on GitHub checks the collection and republishes it.
 
-SOURCE ON GITHUB (private repository)
+SOURCE ON GITHUB (public repository)
 https://github.com/BigsmokeLondon/punjab-kashmir-explorer
-Commit and push changes from this folder to keep it current.
+Commit and push changes from this folder to update both the repository and the website.
+
+PRIVATE COPY (only your claude.ai account can open it)
+https://claude.ai/artifact/MCd5tP8iJdZoKhCJ9gSNUY
+It does not update itself: republish it as described below.
 
 OPEN ON YOUR COMPUTER
 1. On Windows with Python 3 installed, double-click Open_Website_Windows.cmd.
@@ -30,7 +34,7 @@ If port 8000 is already in use, replace it with 8001 in the command and address.
 Full-book search needs the local server because browsers restrict fetching
 local files. Archival and other external source links need an internet connection.
 
-UPDATE THE HOSTED COPY
+UPDATE THE PRIVATE CLAUDE.AI COPY
 After changing anything in dist/, run:
   python make_artifact.py <staging folder>
 then republish the staged files to the same claude.ai page (Claude can do this;
@@ -38,15 +42,17 @@ give it the link above). files.json in the staging folder lists where each file 
 
 YOUR REVIEW NOTES
 Saved records, review marks and notes live in the browser you use, separately
-for the local copy and the hosted copy. Use "Copy saved" to copy your saved
-records, with their qualifications and your notes, to the clipboard.
+for each copy (local, GitHub website, claude.ai). They are never uploaded.
+Use "Copy saved" to copy your saved records, with their qualifications and
+your notes, to the clipboard.
 
 EDITABLE SOURCE
 Edit prepare-data.py and book_research.py, then run python prepare-data.py
 to regenerate the record and passage data, and node check.mjs to test it.
 README.md explains the project. artwork-brief.md documents the images and prompts.
 The design report (dist/assets/Punjab_Kashmir_Design_Report.docx) and the
-original banner (dist/assets/history/heritage-panorama.png) stay local only.
+original banner (dist/assets/history/heritage-panorama.png) are in the public
+repository but are not part of the published website.
 
 HISTORICAL CONTEXT
 The book describes the 1881 census, first published in 1883 and reprinted in
