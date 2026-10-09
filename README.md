@@ -1,4 +1,28 @@
-# Punjab and Kashmir research explorer
+# Punjab & Kashmir Explorer
+
+A website on the tribes, clans and biradaris of Pakistani Punjab and Azad Kashmir.
+
+**Open the site: https://bigsmokelondon.github.io/punjab-kashmir-explorer/**
+
+## What's in it
+
+- 109 groups, from Arain, Awan and Gujjar to the Baloch tribes of Dera Ghazi Khan and the clans of the Salt Range.
+- Each entry shows where the group was recorded, how it was classified and any origin stories, with a link to the exact source passage.
+- The main historical source is Denzil Ibbetson's *Panjab Castes*, his account of the 1881 census (published 1883, reprinted 1916). You can read the cited passages and search the whole book on the site.
+
+## How to use it
+
+- Search for a name, spelling or place, or filter by region (Punjab or AJK), type, or the book's own groupings.
+- Tap a name to open its record. "Read uploaded passage" shows the original text.
+- You can save records and add your own notes. They stay on your device.
+
+## A word of caution
+
+The book is a colonial record from 1881. Its categories and place names belong to that time, and it includes the author's own prejudices and theories. A name being listed under a group, or an origin story being reported, doesn't prove any family's ancestry. Each entry keeps those caveats next to the claims.
+
+The site works on phones too. If you spot a mistake or know a better source for a group, please [open an issue](https://github.com/BigsmokeLondon/punjab-kashmir-explorer/issues).
+
+## Project notes
 
 A buildless website. This folder is the master copy, kept in the public GitHub repository https://github.com/BigsmokeLondon/punjab-kashmir-explorer. GitHub Pages publishes it at https://bigsmokelondon.github.io/punjab-kashmir-explorer/ on every push to `main`; `.github/workflows/pages.yml` runs `check.mjs` first and leaves the project Design Report and the original banner out of the published site. A private claude.ai copy also exists: https://claude.ai/artifact/MCd5tP8iJdZoKhCJ9gSNUY.
 
