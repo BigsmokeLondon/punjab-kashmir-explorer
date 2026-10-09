@@ -1,26 +1,28 @@
 # Punjab & Kashmir Explorer
 
-A website on the tribes, clans and biradaris of Pakistani Punjab and Azad Kashmir.
+A research website on the tribes, clans and biradaris of Pakistani Punjab and Azad Jammu & Kashmir.
 
-**Open the site: https://bigsmokelondon.github.io/punjab-kashmir-explorer/**
+**Website:** https://bigsmokelondon.github.io/punjab-kashmir-explorer/
 
-## What's in it
+## Contents
 
-- 109 groups, from Arain, Awan and Gujjar to the Baloch tribes of Dera Ghazi Khan and the clans of the Salt Range.
-- Each entry shows where the group was recorded, how it was classified and any origin stories, with a link to the exact source passage.
-- The main historical source is Denzil Ibbetson's *Panjab Castes*, his account of the 1881 census (published 1883, reprinted 1916). You can read the cited passages and search the whole book on the site.
+- **109 groups**, ranging from the Arain, Awan and Gujjar to the Baloch tribes of Dera Ghazi Khan and the clans of the Salt Range.
+- **Sourced entries.** Each entry records where the group was documented, how it was classified and any reported origin traditions. Most entries cite a specific passage from the source text. Entries supported only by project material are marked as research leads.
+- **Primary source.** Denzil Ibbetson's *Panjab Castes*, the account of the 1881 Punjab census (first published 1883, reprinted 1916). The cited passages can be read on the site, and the full text is searchable.
 
-## How to use it
+## Using the site
 
-- Search for a name, spelling or place, or filter by region (Punjab or AJK), type, or the book's own groupings.
-- Tap a name to open its record. "Read uploaded passage" shows the original text.
-- You can save records and add your own notes. They stay on your device.
+- Search by name, spelling or place, or filter by region (Punjab or AJK), record type, or the book's own groupings.
+- Select a name to open its record. "Read uploaded passage" displays the original text.
+- Records can be saved and annotated. Saved records and notes are stored only on your own device.
 
-## A word of caution
+## A note on the sources
 
-The book is a colonial record from 1881. Its categories and place names belong to that time, and it includes the author's own prejudices and theories. A name being listed under a group, or an origin story being reported, doesn't prove any family's ancestry. Each entry keeps those caveats next to the claims.
+*Panjab Castes* is a colonial record of 1881. Its categories and place names reflect that period, and it contains the author's own prejudices and theories. The inclusion of a name under a group, or a reported origin tradition, does not establish any family's ancestry. Each entry keeps these qualifications alongside its claims.
 
-The site works on phones too. If you spot a mistake or know a better source for a group, please [open an issue](https://github.com/BigsmokeLondon/punjab-kashmir-explorer/issues).
+## Feedback
+
+The site works on desktop and mobile. Corrections and suggested sources are welcome through [GitHub Issues](https://github.com/BigsmokeLondon/punjab-kashmir-explorer/issues).
 
 ## Project notes
 
