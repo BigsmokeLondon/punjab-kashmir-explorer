@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="theme-color" content="#392819">
+  <meta name="description" content="A private working collection of tribes, clans and biradaris of Pakistani Punjab and Azad Jammu and Kashmir. Browse names and inspect their sources and qualifications.">
+  <title>Punjab &amp; Kashmir Explorer</title>
+  <link rel="icon" type="image/svg+xml" href="assets/collection-mark.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="heritage.css">
+  <script src="data.js" defer></script>
+  <script src="core.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#explorer">Skip to the collection</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Punjab and Kashmir collection home"><img src="assets/collection-mark.svg" alt="" width="36" height="36"><span>Punjab &amp; Kashmir<small>THE RESEARCH COLLECTION</small></span></a>
+    <nav aria-label="Main navigation"><a href="#explorer">Explorer</a><a href="#historical-images">Historical images</a><a href="book.html">Read the book</a><a href="#sources">Sources</a></nav>
+    <span class="private-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Private<span class="badge-detail"> collection</span></span>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">THE PUNJAB &amp; KASHMIR HERITAGE COLLECTION</p>
+        <div class="title-panel"><h1 id="hero-title">Tribes, clans<br>&amp; biradaris.</h1><span class="title-flourish" aria-hidden="true">✦</span></div>
+        <p class="hero-description">Explore community names, recorded classifications and the sources behind them. Keep place, period and uncertainty in view as you prepare your next post.</p>
+        <div class="hero-actions"><a class="text-link" href="#explorer">Explore the collection <span aria-hidden="true">↗</span></a><a class="text-link" href="#historical-images">View historical images <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <figure class="heritage-panorama">
+        <button class="history-image-button" data-history="artwork" aria-label="Enlarge the decorative Punjab and Kashmir panorama"><img src="assets/history/heritage-panorama-smaller-mosque.png" width="1942" height="809" fetchpriority="high" alt="Decorative sepia illustration combining a Punjabi village, arched architecture, a river, Kashmiri timber houses and distant mountains."><span class="enlarge-label">View full artwork ↗</span></button>
+        <figcaption><strong>Regional heritage, imagined.</strong> AI-created decorative artwork. A composite scene, without a specific date or historical event.</figcaption>
+      </figure>
+      <div class="scope-ribbon"><span><strong>Punjab</strong>Pakistani Punjab &amp; Pothohar</span><span aria-hidden="true" class="ribbon-divider">✦</span><span><strong>Kashmir</strong>AJK records in this collection</span></div>
+    </section>
+
+    <div class="collection-meta"><span><strong id="total-count">109</strong> group records</span><span><strong>2</strong> browsing regions</span><span><strong>4</strong> record sources</span><span class="meta-note">Locations are examples, never exclusive territories.</span></div>
+    <aside class="book-notice"><div><p class="eyebrow">EXPANDED FROM YOUR UPLOADED TEXT</p><p><strong>86 records now come from <em>Panjab Castes</em>.</strong> They include Baloch tribes of Derah Ghazi Khan, Jat and Rajput tribes of the western plains and Salt Range, Kashmiri settlers and occupational groups. Browse them by the book's own groupings, read the cited OCR passages and search the full book, with the 1881 account kept distinct from modern project examples.</p></div><a class="text-link" href="book.html">Open the source reader <span aria-hidden="true">↗</span></a></aside>
+
+    <section class="explorer section-wrap" id="explorer" aria-labelledby="explorer-title">
+      <div class="section-heading"><div><p class="eyebrow">THE EXPLORER</p><h2 id="explorer-title">Browse the collection</h2></div><button class="button button-subtle" id="export-button" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>Copy saved <span id="saved-total">0</span></button></div>
+      <div class="filter-panel">
+        <div class="region-tabs" role="group" aria-label="Filter by region"><button data-region="all" aria-pressed="true">All regions</button><button data-region="punjab" aria-pressed="false">Punjab</button><button data-region="kashmir" aria-pressed="false">Kashmir <span>AJK</span></button></div>
+        <div class="search-row"><div class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><label class="sr-only" for="search">Search names, alternative spellings or places</label><input type="search" id="search" placeholder="Search a name, spelling or place…" autocomplete="off"><button id="clear-search" aria-label="Clear search" hidden>×</button><kbd aria-hidden="true">/</kbd></div><div class="select-field"><label for="type-filter">Record type</label><select id="type-filter"><option value="all">All types</option><option value="community">Community identity</option><option value="clan">Clan or group name</option><option value="title">Name or lineage title</option></select></div><div class="select-field"><label for="group-filter">1881 grouping</label><select id="group-filter"><option value="all">All groupings</option></select></div></div>
+        <div class="filter-bottom"><div class="filter-toggles"><label><input type="checkbox" id="lead-filter">Research leads only</label><label><input type="checkbox" id="review-filter">Needs review</label><label><input type="checkbox" id="saved-filter">Saved</label></div><button class="reset-button" id="reset-filters">Reset filters</button></div>
+      </div>
+      <div class="results-bar"><p id="results-count" role="status" aria-live="polite">109 records</p><p>Alphabetical <span aria-hidden="true">↓</span></p></div>
+      <div class="record-grid" id="record-grid"></div>
+      <div class="empty-state" id="empty-state" hidden><span aria-hidden="true">⌕</span><h3>No records match these filters</h3><p>Try a shorter name or spelling, or clear the region and review filters.</p><button class="button button-primary" id="empty-reset">Reset filters</button></div>
+      <p class="review-storage" id="storage-note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4zM8 4v6h8V4M8 20v-6h8v6"/></svg>Saved records, review marks and notes stay in this browser. Use Copy saved to keep a copy elsewhere.</p><label class="sr-only" for="export-fallback">Saved records to copy</label><textarea readonly id="export-fallback" class="copy-fallback" hidden></textarea>
+    </section>
+
+    <section class="historical-section section-wrap" id="historical-images" aria-labelledby="historical-title">
+      <div class="section-heading"><div><p class="eyebrow">THE VISUAL ARCHIVE</p><h2 id="historical-title">Places, craft &amp; memory.</h2></div><p class="section-description">Historical photographs with dates<br>and links to their catalogue records.</p></div>
+      <p class="history-intro">These photographs give regional context. They do not establish the clan identity or ancestry of the people shown.</p>
+      <div class="history-grid">
+        <figure class="history-card">
+          <button class="history-image-button" data-history="lahore" aria-label="Enlarge the 1895 photograph of Wazir Khan Mosque in Lahore"><img src="assets/history/lahore-vazir-khan-1895.jpg" loading="lazy" width="1536" height="1168" alt="Historic photograph of the gateway and surrounding street of the mosque catalogued as the Great Mosque of Vazir Khan in Lahore."><span class="enlarge-label">Enlarge ↗</span></button>
+          <figcaption class="history-caption"><p class="eyebrow">PUNJAB · ARCHIVAL PHOTOGRAPH</p><h3>Wazir Khan Mosque, Lahore</h3><p class="history-date">8 to 11 February 1895</p><p>William Henry Jackson. Library of Congress, World's Transportation Commission collection.</p><p class="history-note">A record of Lahore's architecture. It does not document a particular clan affiliation.</p><a class="text-link" href="https://www.loc.gov/item/2004707365/" target="_blank" rel="noopener noreferrer">View catalogue &amp; source <span aria-hidden="true">↗</span></a><details class="image-credits"><summary>Image credit and source note</summary><p>Catalogue title: Lahore, the Great Mosque of Vazir Khan. LCCN 2004707365. Digital image: wtc.4a02629. Library of Congress rights advisory: no known restrictions on publication.</p><a href="https://commons.wikimedia.org/wiki/File:Lahore_-_the_Great_Mosque_of_Vazir_Khan_LCCN2004707365.jpg" target="_blank" rel="noopener noreferrer">Digital copy on Wikimedia Commons ↗</a></details></figcaption>
+        </figure>
+        <figure class="history-card">
+          <button class="history-image-button" data-history="kashmir" aria-label="Enlarge the photograph of Kashmir shawl weaving from around 1903"><img src="assets/history/kashmir-shawl-weavers.jpg" loading="lazy" width="3003" height="3129" alt="Archival photograph of shawl weaving in Kashmir, published by Underwood and Underwood around 1903."><span class="enlarge-label">Enlarge ↗</span></button>
+          <figcaption class="history-caption"><p class="eyebrow">KASHMIR · ARCHIVAL PHOTOGRAPH</p><h3>Shawl weaving in Kashmir</h3><p class="history-date">Circa 1903</p><p>Underwood &amp; Underwood. Library of Congress, Prints and Photographs Division.</p><p class="history-note">Wider Kashmir context, outside the AJK record scope. The catalogue does not identify the people's biradari or ancestry.</p><a class="text-link" href="https://www.loc.gov/item/91787497/" target="_blank" rel="noopener noreferrer">View catalogue &amp; source <span aria-hidden="true">↗</span></a><details class="image-credits"><summary>Image credit and source note</summary><p>Catalogue: shawl-weavers at Cashmere. LCCN 91787497. Digital image: cph.3c03642. Library of Congress rights advisory: no known restrictions on publication. The historical title reflects the publisher's wording.</p><a href="https://commons.wikimedia.org/wiki/File:Humble_shawl-weavers_in_Kashmir.jpg" target="_blank" rel="noopener noreferrer">Digital copy on Wikimedia Commons ↗</a></details></figcaption>
+        </figure>
+      </div>
+      <p class="history-method">Archive photographs retain their original image content. The illustrated panorama above is new decorative artwork. Neither serves as evidence for a lineage claim.</p>
+    </section>
+
+    <section class="reading-guide section-wrap" id="reading-guide" aria-labelledby="guide-title"><div class="section-heading"><div><p class="eyebrow">READ WITH CONTEXT</p><h2 id="guide-title">A name is the starting point.</h2></div></div><div class="guide-grid"><article><span class="guide-number">01</span><h3>Look at the claim</h3><p>Recorded usage, a classification and a lineage tradition may have different evidence. Notes sit beside the claim they qualify.</p></article><article><span class="guide-number">02</span><h3>Check place and period</h3><p>Browse selected Punjab and AJK records. Book passages may also name places in wider historical Punjab; their district names and boundaries are dated.</p></article><article><span class="guide-number">03</span><h3>Keep the qualification</h3><p>Copying a summary includes its caveat and sources. Marking a record reviewed records your editorial progress, not proven ancestry.</p></article></div><details class="method-details"><summary>Evidence labels and coverage</summary><div><p><strong>Context located</strong> means an independent source was located for at least one specific statement. Other parts of the record may still need verification.</p><p><strong>Research lead</strong> means the entry currently rests on project material. Its name, locality or classification needs a more specific reference before factual use.</p><p><strong>Reported tradition</strong> identifies an attributed claim. Recording a tradition does not establish its genealogy. Searchable source labels that remain uncertain are clearly marked.</p><p><strong>1881 grouping</strong> follows the part and section of <em>Panjab Castes</em> where a name is discussed, with headings lightly reworded. It shows where the book places a name, not a community's status or descent. Occupational entries describe 1881 work and census headings, not present-day families.</p><p>The collection is selected, not exhaustive. It does not represent all of historical Punjab or the whole Kashmir region. The landscape illustration is decorative and does not show political boundaries or clan emblems.</p></div></details></section>
+
+    <section class="source-section section-wrap" id="sources" aria-labelledby="sources-title"><div class="section-heading"><div><p class="eyebrow">THE SOURCE DESK</p><h2 id="sources-title">Follow the evidence.</h2></div><p class="section-description">Project material and the uploaded book provide the inventory.<br>References give individual claims context.</p></div><div class="source-grid" id="source-grid"></div></section>
+  </main>
+  <footer><a class="brand footer-brand" href="#top"><img src="assets/collection-mark.svg" alt="" width="28" height="28"><span>Punjab &amp; Kashmir</span></a><p>A private working collection · Heritage edition, 8 October 2026</p><a href="#top">Back to top ↑</a></footer>
+
+  <dialog id="record-dialog" class="record-dialog" aria-labelledby="detail-title"><div class="drawer-toolbar"><span>RECORD DETAILS</span><button id="close-record" class="icon-button" aria-label="Close record">×</button></div><div id="record-detail"></div></dialog>
+  <dialog id="poster-dialog" class="poster-dialog" aria-labelledby="poster-title"><div class="drawer-toolbar"><h2 id="poster-title">Project material</h2><button id="close-poster" class="icon-button" aria-label="Close source image">×</button></div><p>Working project artwork. Its symbols are not authenticated clan emblems.</p><img id="poster-image" alt=""></dialog>
+  <dialog id="history-dialog" class="history-dialog" aria-labelledby="history-viewer-title"><div class="drawer-toolbar"><h2 id="history-viewer-title">Historical image</h2><button id="close-history" class="icon-button" aria-label="Close historical image">×</button></div><img id="history-viewer-image" alt=""><div id="history-viewer-caption"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <noscript><p class="noscript">Enable JavaScript to browse, search and review the collection. The original source links remain available.</p></noscript>
+</body>
+</html>

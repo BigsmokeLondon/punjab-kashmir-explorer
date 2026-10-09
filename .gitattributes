@@ -1,0 +1,4 @@
+# The uploaded book text is checksummed and cited by line number: keep its bytes (CRLF) exactly.
+dist/assets/sources/*.txt -text
+# cmd.exe needs CRLF line endings in batch files.
+*.cmd text eol=crlf

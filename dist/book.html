@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="theme-color" content="#392819">
+  <title>Panjab Castes | Uploaded source reader</title>
+  <meta name="description" content="Read the uploaded historical passages cited by the private Punjab and Kashmir research collection.">
+  <link rel="icon" type="image/svg+xml" href="assets/collection-mark.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="heritage.css">
+  <link rel="stylesheet" href="book.css">
+  <script src="passages.js" defer></script>
+  <script src="book-core.js" defer></script>
+  <script src="book.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#source-reader">Skip to source passage</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Return to Punjab and Kashmir explorer"><img src="assets/collection-mark.svg" alt="" width="36" height="36"><span>Punjab &amp; Kashmir<small>THE RESEARCH COLLECTION</small></span></a>
+    <nav aria-label="Source navigation"><a href="index.html#explorer">Explorer</a><a href="index.html#sources">Source desk</a><a href="#full-search">Search the book</a></nav>
+    <span class="private-badge">Private<span class="badge-detail"> collection</span></span>
+  </header>
+  <main class="book-main">
+    <div class="book-heading"><p class="eyebrow">THE UPLOADED SOURCE</p><h1>Panjab Castes</h1><p class="book-deck">Read the passage. Keep its context.</p><p>Denzil Ibbetson's account of the <strong>1881 census</strong>, first published in <strong>1883</strong> and reprinted in <strong>1916</strong>.</p></div>
+    <aside class="book-context" aria-label="Historical source context"><h2>A record of its period</h2><p>The 1916 introductory note says the figures and territorial boundaries were already out of date, and that the text had not been brought up to date. This book records census usage, reported traditions and the author's interpretations.</p><p>The original contains caste rankings, prejudicial descriptions and speculative ancestry claims. They are visible here for source checking. Their inclusion does not endorse them. OCR errors and broken tables remain in the uploaded text; check a scanned page before quoting exact wording.</p><a href="#passage=edition">Read the introductory note</a></aside>
+    <section class="reader-panel" id="source-reader" aria-labelledby="passage-title">
+      <div class="passage-controls"><label for="passage-select">Selected passage</label><select id="passage-select"></select></div>
+      <div class="passage-heading"><p class="eyebrow">SOURCE TRANSCRIPTION</p><h2 id="passage-title">Loading passage…</h2><p id="passage-locator"></p><p class="reader-small">Line numbers refer to your uploaded file, not printed page numbers. Original OCR wording is preserved. Any gaps are explicitly labelled.</p></div>
+      <div id="passage-text"></div>
+      <div class="reader-links"><a class="text-link" href="https://archive.org/details/panjabcastes00ibbe" target="_blank" rel="noopener noreferrer">Edition and scanned pages ↗</a></div>
+    </section>
+    <section class="book-search reader-panel" id="full-search" aria-labelledby="book-search-title">
+      <p class="eyebrow">BEYOND THE CURATED RECORDS</p><h2 id="book-search-title">Search the full uploaded text</h2><p>Find a name or phrase elsewhere in the book. A search match is a lead to inspect, not a verified classification or family relationship. Try alternative spellings if the OCR misses a name.</p>
+      <form id="book-search-form"><label for="book-query">Name or phrase</label><div class="book-search-row"><input id="book-query" type="search" minlength="2" maxlength="160" placeholder="For example: Qutb Shah" required autocomplete="off"><button id="book-search-button" class="button button-primary" type="submit">Search text</button></div></form>
+      <p id="book-search-status" role="status" aria-live="polite">The full text loads when you search. Phrases match across spaces and line breaks.</p>
+      <div class="book-match-controls" id="match-controls" hidden><button type="button" class="button button-secondary" id="previous-match">← Previous</button><span id="match-position"></span><button type="button" class="button button-secondary" id="next-match">Next →</button></div>
+      <p class="reader-small" id="search-lines" hidden></p><pre class="ocr-text" id="search-excerpt" tabindex="0" aria-label="Search result with surrounding source text" hidden></pre>
+    </section>
+    <details class="source-provenance"><summary>Uploaded file and citation details</summary><p><strong>Uploaded file:</strong> <span id="original-filename"></span></p><p><strong>Citation:</strong> Denzil Ibbetson, <em>Panjab Castes</em>, Lahore, Government Printing, Punjab, 1916. Reprint of the census chapter first published in 1883, describing the 1881 census. Use the section locator attached to each passage.</p><p>The site keeps the uploaded file byte for byte. The reader normalizes line endings for display and gives one-based upload line numbers. Archive navigation text and OCR errors are still present in the full text.</p><p class="reader-small">File fingerprint (SHA-256): <code id="source-fingerprint"></code></p></details>
+    <a class="text-link back-explorer" href="index.html#explorer">← Return to the explorer</a>
+  </main>
+  <footer><a class="brand footer-brand" href="index.html"><img src="assets/collection-mark.svg" alt="" width="28" height="28"><span>Punjab &amp; Kashmir</span></a><p>A private working collection · Historical source reader</p><a href="#source-reader">Back to passage ↑</a></footer>
+  <noscript><p class="noscript">Enable JavaScript to select passages and search the book.</p></noscript>
+</body>
+</html>
